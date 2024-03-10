@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Basandote en el siguiente html,inserta una p con el texto 'Voy en medio!' entre los dos div. Recuerda que no solo puedes insertar elementos con .appendChild. -->
+    <div></div>
+    <div></div>
+    
+    <script>
+
+        const primerDiv = document.querySelector('div: last-child'); // seleciona el ultimo div
+            const body = document.body; // nodo padre de los 2 elementos
+
+            const p = document.createElement('p')
+            p.textContent = 'Voy en medio'
+            body.insertBefore(p, primerDiv)// esto te diceque meta una p con un texto (asi lo crea encima del div) 
+    </script>
+
+
+   <!-- 
+    <div id="one"></div>
+   <div id="one"></div>
+
+   <script>
+
+        let div = document.getElementById("one");
+        div.insertAdjacentHTML("beforeend", 'Voy en medio');
+
+   </script>  esto me dava voy en medio en un div :(
+     -->
+
+
+
+</body>
+</html>

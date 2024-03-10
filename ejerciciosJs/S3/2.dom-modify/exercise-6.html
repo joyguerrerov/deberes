@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Basandote en el siguiente array crea una lista ul > li con los textos del array y metelo en el html.
+ -->
+ <script>
+
+    const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
+    const ul = document.createElement('ul');
+    apps.forEach(app => {
+        const li = document.createElement('li')
+        ul.appendChild(li)
+        li.textContent= app
+    });
+    document.body.appendChild(ul)
+
+ </script>
+</body>
+</html>

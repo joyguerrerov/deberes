@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Dado el siguiente html usa querySelector para mostrar por consola el 3 personaje con el atributo data-function="testMe".-->
+    <span data-function="testMe">Batman</span>
+    <span data-function="testMe">Robin</span>
+    <span data-function="testMe">Rick</span>
+    <span data-function="testMe">Morty</span>
+    
+    <script>
+        const data = document.querySelectorAll('[data-function="testMe"]'); // se pone entre [] por que es un atributo propio
+         console.log(data[2]);
+
+// OTRA FORMA-----
+    const spans = document.querySelectorAll('span')
+    console.log(spans[2].dataset.function) // dataset, se usa para el atributo data
+// OTRA----------
+
+    const cartoon = document.querySelectorAll([`[data-function="testMe"]`])[2]
+        console.log(cartoon[2])
+   
+   </script>
+
+</body>
+</html>
